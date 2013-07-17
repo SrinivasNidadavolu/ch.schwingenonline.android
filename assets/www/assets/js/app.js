@@ -13,7 +13,7 @@
  *
  * @var {String}
  */
-var _base = "http://xiaov8.com";
+var _base = "http://xiaov8.com/";
 
 /**
  * Stores the app's API URI.
@@ -654,7 +654,7 @@ function fetchJSON(url, callback) {
 		type: 'GET',
 		dataType: 'json',
 		timeout: 5000,
-		cache: true
+		cache: true,
 	})
 	.done(function(data, status, xhr) {
 		return callback(null, data);
@@ -859,11 +859,12 @@ function validateCache() {
 	var cache = _storage.getItem('cache_time');
 	var lifetime;
 
-	_preferences.get('cache_lifetime', function(value) {
-		lifetime = value;
-	}, function() {
-		lifetime = 1;
-	});
+	//_preferences.get('cache_lifetime', function(value) {
+	//	lifetime = value;
+	//}, function() {
+	//	lifetime = 1;
+	//});
+	lifetime = 1;
 
 	if (cache !== null) {
 		var diff = time - cache;

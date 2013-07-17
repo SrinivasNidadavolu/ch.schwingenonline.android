@@ -13,22 +13,22 @@
 	},
 
 	"category": {
-		"index": "get_category_index?dev=0",
+		"index": "get_category_index/?dev=0",
 		"posts": "get_category_posts/?include=id,title,excerpt&id="
 	},
 
 	"tag": {
-		"index": "get_tag_index?dev=0",
+		"index": "get_tag_index/?dev=0",
 		"posts": "get_tag_posts/?include=id,title,excerpt&id="
 	},
 
 	"author": {
-		"index": "get_author_index?dev=0",
+		"index": "get_author_index/?dev=0",
 		"posts": "get_author_posts/?include=id,title,excerpt&id="
 	},
 
 	"page": {
-		"index": "get_page_inde?dev=0",
+		"index": "get_page_inde/?dev=0",
 		"id": "get_page/?include=title,content&id=",
 		"slug": "get_page/?include=title,content&slug="
 	},

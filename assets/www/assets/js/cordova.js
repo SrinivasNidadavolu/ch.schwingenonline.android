@@ -49,12 +49,11 @@ function onDeviceReady() {
         },
         function(callback) {
             setTimeout(function() {
-                _preferences = cordova.require('cordova/plugin/applicationpreferences');
+                //_preferences = cordova.require('cordova/plugin/applicationpreferences');
                 return callback(null);
             }, 0);
         }
     ], function(err, results) {
-        applyPreferences();
         initApp();
         initGestures();
     });
