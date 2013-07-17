@@ -13,7 +13,7 @@
  *
  * @var {String}
  */
-var _base = "http://www.schwingenonline.ch/";
+var _base = "http://xiaov8.com";
 
 /**
  * Stores the app's API URI.
