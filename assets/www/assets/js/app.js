@@ -654,7 +654,7 @@ function fetchJSON(url, callback) {
 		type: 'GET',
 		dataType: 'json',
 		timeout: 5000,
-		cache: true,
+		cache: true
 	})
 	.done(function(data, status, xhr) {
 		return callback(null, data);
